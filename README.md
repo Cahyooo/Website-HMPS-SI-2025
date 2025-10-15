@@ -52,9 +52,14 @@ Composer    | v2.5.8
 
 4. Pastikan file .env sudah dikonfigurasi dengan benar (database, app key, dsb).
 
-5. Jalankan server Laravel:
+5. Jalankan migration dan seeder:
+   php artisan migrate --seed
+
+6. Jalankan server Laravel:
    php artisan serve
 
+7. Generate application key(Bila step 6 tidak jalan tampilannya dan return error), kemudian ubah di .env APP_KEY:
+   php artisan key:generate
 
 🧰 TROUBLESHOOTING
 ------------------
