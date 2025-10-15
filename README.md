@@ -53,7 +53,7 @@ Composer    | v2.5.8
 4. Pastikan file .env sudah dikonfigurasi dengan benar (database, app key, dsb).
 
 5. Jalankan server Laravel:
-   composer run dev
+   php artisan serve
 
 
 🧰 TROUBLESHOOTING
