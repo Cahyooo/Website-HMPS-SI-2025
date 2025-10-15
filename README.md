@@ -23,7 +23,7 @@ PHP         | v4.3.22
 Node.js     | v22.19.0
 Composer    | v2.5.8
 
-⚠️ Jika terjadi error selama instalasi atau build, pastikan versi Node dan Composer sesuai dengan tabel di atas.
+⚠️ Jika terjadi error selama instalasi atau build, pastikan versi sesuai dengan tabel di atas.
 
 
 🖥️ LOCAL INSTALLATION GUIDE
