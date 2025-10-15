@@ -19,6 +19,7 @@ Backend:
 ----------------------
 Tool        | Version
 ------------|----------
+PHP         | v4.3.22
 Node.js     | v22.19.0
 Composer    | v2.5.8
 
