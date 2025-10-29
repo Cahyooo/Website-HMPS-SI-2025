@@ -23,7 +23,7 @@ class SpecializationResource extends Resource
 
     protected static string | UnitEnum | null $navigationGroup = 'Information';
 
-    protected static ?string $recordTitleAttribute = 'Specialization';
+    protected static ?string $recordTitleAttribute = 'name';
 
     public static function form(Schema $schema): Schema
     {

@@ -1,6 +1,7 @@
 Specialization: 
-              http://127.0.0.1:8000/api/specialization
-              http://127.0.0.1:8000/api/specialization/{code}
+            http://127.0.0.1:8000/api/specialization
+            http://127.0.0.1:8000/api/specialization/{code}
 
-
-  
+Lecturer:
+            http://127.0.0.1:8000/api/lecturer
+            http://127.0.0.1:8000/api/lecturer/{slug}

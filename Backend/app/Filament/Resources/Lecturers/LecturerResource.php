@@ -20,10 +20,10 @@ class LecturerResource extends Resource
     protected static ?string $model = Lecturer::class;
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::User;
-    
+
     protected static string | UnitEnum | null $navigationGroup = 'Information';
 
-    protected static ?string $recordTitleAttribute = 'Lecturer';
+    protected static ?string $recordTitleAttribute = 'full_name';
 
     public static function form(Schema $schema): Schema
     {

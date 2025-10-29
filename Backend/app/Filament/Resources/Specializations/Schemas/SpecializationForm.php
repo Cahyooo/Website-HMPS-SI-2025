@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\Specializations\Schemas;
 
+use App\Models\Specialization;
 use Filament\Forms;
 use Filament\Forms\Components\{TextInput, Textarea, Select};
 use Filament\Schemas\Components\{Section, Grid};
@@ -36,6 +37,10 @@ class SpecializationForm
                                     ->helperText('Short unique identifier (2 letters).')
                                     ->prefixIcon('heroicon-o-hashtag')
                                     ->required()
+                                    ->unique(ignoreRecord: true, table: Specialization::class, column: 'code')
+                                    ->validationMessages([
+                                        'unique' => 'Code ini sudah terdaftar untuk spesialisasi lain.',
+                                    ])
                                     ->maxLength(20)
                                     ->unique(ignoreRecord: true),
                             ]),

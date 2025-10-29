@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Models\Lecturer;
+use App\Observers\LecturerObserver;
 use Filament\Support\Colors\Color;
 use Filament\Support\Facades\FilamentColor;
 use Illuminate\Support\ServiceProvider;
@@ -27,5 +29,7 @@ class AppServiceProvider extends ServiceProvider
             'ec' => Color::Purple,
             'im' => Color::Pink,
         ]);
+        
+        Lecturer::observe(LecturerObserver::class);
     }
 }
