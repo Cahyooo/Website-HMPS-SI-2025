@@ -61,6 +61,19 @@ Composer    | v2.5.8
 7. Generate application key(Bila step 6 tidak jalan tampilannya dan return error), kemudian ubah di .env APP_KEY:
    php artisan key:generate
 
+
+🔐 ADMIN PANEL (FILAMENT)
+-------------------------
+Pengelolaan data dan konten website dapat dilakukan melalui **Admin Panel Laravel Filament**.
+
+Akses Admin Panel:
+- URL: http://localhost:8000/admin
+
+Default Akun Admin:
+- Email    : admin@gmail.com
+- Password : admin
+
+
 🧰 TROUBLESHOOTING
 ------------------
 Jika terjadi error:
