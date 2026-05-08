@@ -1,1 +1,59 @@
 @import "tailwindcss";
+
+@theme {
+  /* ── Colors ── */
+  --color-navy:   #0d2240;
+  --color-navy-2: #112952;
+  --color-navy-3: #1a3a6b;
+  --color-cyan:   #00b4d8;
+  --color-cyan-2: #48cae4;
+  --color-gold:   #f4a020;
+
+  /* ── Font ── */
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+
+  /* ── Keyframes ── */
+  --keyframes-fadeUp: {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  };
+  --keyframes-shimmer: {
+    0%   { background-position: -800px 0; }
+    100% { background-position:  800px 0; }
+  };
+
+  /* ── Animations ── */
+  --animate-fadeUp:  fadeUp 0.45s ease both;
+  --animate-shimmer: shimmer 1.5s infinite;
+}
+
+/* ── Global ── */
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-navy); }
+::-webkit-scrollbar-thumb { background: var(--color-cyan); border-radius: 3px; }
+
+/* ── Utilities ── */
+.skeleton {
+  background: linear-gradient(90deg, #e8edf2 25%, #f4f6f8 50%, #e8edf2 75%);
+  background-size: 800px 100%;
+  animation: var(--animate-shimmer);
+}
+
+.carousel-track {
+  transition: transform 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.card-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+.img-zoom img {
+  transition: transform 0.5s ease;
+}
+.img-zoom:hover img {
+  transform: scale(1.05);
+}
