@@ -5,7 +5,7 @@ const NAV_ITEMS = [
   { to: '/',           label: 'Beranda' },
   { to: '/penjurusan', label: 'Penjurusan' },
   { to: '/dosen',      label: 'Dosen' },
-  { to: '/anggota',    label: 'Anggota' },
+  { to: '/anggota',    label: 'HMPS' },
   { to: '/tentang',    label: 'Tentang' },
 ]
 
