@@ -14,8 +14,10 @@ Route::get('/specialization', function (Request $request) {
 });
 
 Route::get('/specialization/{code}', function (string $code) {
-    return Specialization::where('code', $code)->firstOrFail();
+    // strtoupper($code) akan otomatis mengubah 'di' atau 'Di' menjadi 'DI'
+    return Specialization::where('code', strtoupper($code))->firstOrFail();
 });
+
 
 Route::get('/lecturer', function (Request $request) {
     return Lecturer::all()->makeHidden(['photo']);;

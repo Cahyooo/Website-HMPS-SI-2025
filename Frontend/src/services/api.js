@@ -26,8 +26,8 @@ api.interceptors.response.use(
  *         research_focus, photo_url (appended), phone_number, address
  */
 export const lecturerApi = {
-  getAll:    ()     => api.get('/lecturers'),
-  getBySlug: (slug) => api.get(`/lecturers/${slug}`),
+  getAll:    ()     => api.get('/lecturer'),
+  getBySlug: (slug) => api.get(`/lecturer/${slug}`),
 }
 
 /**
@@ -35,8 +35,8 @@ export const lecturerApi = {
  * Fields: id, name, code, description
  */
 export const specializationApi = {
-  getAll:  ()   => api.get('/specializations'),
-  getById: (id) => api.get(`/specializations/${id}`),
+  getAll:  ()   => api.get('/specialization'),
+  getById: (id) => api.get(`/specialization/${id}`),
 }
 
 export default api
