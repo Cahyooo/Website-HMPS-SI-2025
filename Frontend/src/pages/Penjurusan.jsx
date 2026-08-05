@@ -45,7 +45,7 @@ export default function Penjurusan() {
               {(data || []).map((s) => (
                 <Link
                   key={s.id}
-                  to={`/penjurusan/${s.id}`}
+                  to={`/penjurusan/${s.code}`}
                   className="rounded-2xl overflow-hidden shadow-md card-lift block"
                 >
                   <img
